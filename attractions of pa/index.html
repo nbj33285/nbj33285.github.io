@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise 3</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    header {
+        color: #EFEA5A;
+        padding-top: 30px;
+      background-color: #B498C6;
+      height: 140px;
+      font-size: 60px;
+      text-align: center;
+      font-weight: bold;
+    }
+    h1{
+        color: #EFEA5A;
+        text-align: center;
+        padding: 10px;
+    }
+    body {
+      margin: 0;
+      font-family: Helvetica, sans-serif;
+      text-align: justify;
+    }
+    footer {
+      background-color: #B498C6;
+      height: 110px;
+      position: bottom;
+      margin: auto;
+      text-align: center;
+      padding: 50px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3%;
+      width: 65%;
+      margin: 50px auto;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      background-color: #B498C6;
+    }
+    .image {
+      width: 100%;
+      padding-top: 56.25%;
+      overflow: hidden;
+      position: relative;
+      border-radius: 20px 20px 0 0;
+    }
+    .image > img {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .content {
+      padding: 20px;
+    }
+    @media (max-width: 800px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <body>
+    <header>Attractions of Pennsylvania
+    </header>
+    <div class="grid-container">
+      <div class="card">
+        <div class="image">
+          <img src="photography/man-7239061_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>The PA Grand Canyon</h1>
+          <p>
+            Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="photography/waterfall-5873630_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Worlds End State Park</h1>
+          <p>
+            Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock Creek Gorge.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="photography/lewisburg-82252_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Lewisburg</h1>
+          <p>A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood 
+            House Museum.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="photography/boots-1867379_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Pine Grove Furnace</h1>
+          <p>Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="photography/fruit-1004887_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Central Market York</h1>
+          <p>The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="photography/roller-coaster-1553336_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Hersheypark</h1>
+          <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="photography/lake-6641880_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Raystown Lake</h1>
+          <p>A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="photography/united-states-1037186_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>PA State Capitol</h1>
+          <p>An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="photography/gettysburg-2895578_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Gettysburg National Military Park</h1>
+          <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center 
+            with exhibits.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="photography/train-143847_1280.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Railroad Museum of Pennsylvania</h1>
+          <p>Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich history of railroading.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <p>Copyright © 2024 | All Rights Reserved </p>
+    </footer>
+  </body>
+</html>
