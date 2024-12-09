@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="bblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Brews & Bonds | Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            line-height: 1.6;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FEFFF3;
+            color: #6F5060;
+            padding: 1rem 2rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 40px;
+            height: 40px;
+            margin-right: 0.5rem;
+        }
+
+        .logo {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #6F5060;
+            font-family: 'Lora', serif;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #bf9aca;
+            transition: 1s ease;
+        }
+
+        .hero {
+            max-width: 800px;
+            margin: 2rem auto 1rem auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .hero .text-box {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .hero .text-box h1 {
+            font-size: 2.5rem;
+            color: #333;
+            font-family: 'Lora', serif;
+        }
+
+        .menu-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        .menu-container h2 {
+            text-align: center;
+            font-family: 'Lora', serif;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-container h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            color: #6F5060;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        .menu-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-container li {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-container li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            background-color: #FEFFF3;
+            color: #6F5060;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        footer .footer-content p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="bblogo.png" alt="Brews & Bonds Logo">
+            <div class="logo">Brews & Bonds</div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ourstory.html">Our Story</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="cannoli.jpg" alt="Coffee Image">
+        <div class="text-box">
+            <h1>Savor Today, Fuel Tomorrow.</h1>
+        </div>
+    </section>
+
+    <div class="menu-container">
+        <h2>Our Menu</h2>
+        <h3>Coffee</h3>
+        <ul>
+            <li><span>Espresso</span><span>$2.50</span></li>
+            <li><span>Americano</span><span>$3.00</span></li>
+            <li><span>Latte</span><span>$4.00</span></li>
+            <li><span>Cappuccino</span><span>$4.00</span></li>
+            <li><span>Mocha</span><span>$4.50</span></li>
+            <li><span>Macchiato</span><span>$4.50</span></li>
+            <li><span>Flat White</span><span>$4.50</span></li>
+            <li><span>Iced Coffee</span><span>$4.00</span></li>
+            <li><span>Cold Brew</span><span>$4.50</span></li>
+            <li><span>Frappuccino</span><span>$5.00</span></li>
+        </ul>
+        <h3>Herbal Tea ($3.00)</h3>
+        <ul>
+            <li><span>Earl Grey</span></li>
+            <li><span>English Breakfast</span></li>
+            <li><span>Green Tea</span></li>
+            <li><span>Jasmine Tea</span></li>
+            <li><span>Chamomile</span></li>
+            <li><span>Peppermint Tea</span></li>
+            <li><span>Rooibos Tea</span></li>
+            <li><span>Matcha Tea</span></li>
+            <li><span>Oolong Tea</span></li>
+            <li><span>White Tea</span></li>
+            <li><span>Herbal Blend (e.g., hibiscus, ginger, lemongrass)</span></li>
+            <li><span>Chai Tea</span></li>
+            <li><span>Darjeeling Tea</span></li>
+            <li><span>Assam Tea</span></li>
+            <li><span>Sencha Tea</span></li>
+            <li><span>Genmaicha Tea</span></li>
+            <li><span>Pu-erh Tea</span></li>
+            <li><span>Lemon Verbena Tea</span></li>
+            <li><span>Mint Tea</span></li>
+            <li><span>Berry Infusion (e.g., raspberry, strawberry)</span></li>
+
+        </ul>
+        <h3>More Drinks</h3>
+        <ul>
+            <li><span>Hot Chocolate</span><span>$3.50</span></li>
+            <li><span>Chai Tea Latte</span><span>$4.50</span></li>
+            <li><span>Matcha Latte</span><span>$4.50</span></li>
+            <li><span>Iced Tea</span><span>$3.50</span></li>
+            <li><span>Smoothie</span><span>$5.00</span></li>
+        </ul>
+        <h3>Food</h3>
+        <ul>
+            <li><span>Croissant</span><span>$2.50</span></li>
+            <li><span>Bagel</span><span>$3.00</span></li>
+            <li><span>Muffin</span><span>$2.50</span></li>
+            <li><span>Scone</span><span>$3.00</span></li>
+            <li><span>Sandwich (e.g., ham & cheese, turkey, avocado)</span><span>$6.00</span></li>
+            <li><span>Salad (e.g., Chicken Caesar, Greek)</span><span>$7.50</span></li>
+            <li><span>Quiche</span><span>$5.50</span></li>
+            <li><span>Soup of the Day</span><span>$4.50</span></li>
+            <li><span>Fruit Parfait</span><span>$4.50</span></li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact Us:</p>
+            <p>Email: info@brewsandbonds.com | Phone: (123) 456-7890</p>
+            <p>&copy; 2024 Brews & Bonds. All rights reserved.</p>
+        </div>
+    </footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
